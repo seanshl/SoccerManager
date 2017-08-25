@@ -1,5 +1,7 @@
 package com.shiyao.soccermanager.models.staffs;
 
+import android.provider.ContactsContract;
+
 import java.util.Date;
 
 /**
@@ -15,6 +17,8 @@ public abstract class Person {
 
     protected Date birthDay;
 
-    protected String email;
+    protected ContactsContract.CommonDataKinds.Email email;
+
+    protected ContactsContract.CommonDataKinds.Phone phone;
 
 }

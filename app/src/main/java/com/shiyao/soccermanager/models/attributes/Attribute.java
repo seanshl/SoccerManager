@@ -9,4 +9,5 @@ public abstract class Attribute {
 
     protected Number value;
 
+    protected String unit;
 }
