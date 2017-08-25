@@ -4,14 +4,28 @@ package com.shiyao.soccermanager.models.metrics;
  * Created by SLiu on 8/25/2017.
  */
 
-public interface Length {
-    Double getValue();
+public abstract class Length {
+    protected double value;
 
-    String getLabel();
+    public double getValue() {
+        return this.value;
+    }
 
-    String getShortLabel();
+    public abstract String getLabel();
 
-    Double convertTo(Length other);
+    public abstract String getShortLabel();
 
-    Double getStandardValue();
+    public Double convertTo(Length other) {
+        if (other == null || other.getValue() == 0.0) {
+            return Double.POSITIVE_INFINITY;
+        } else {
+            return this.getStandardValue() / other.getStandardValue();
+        }
+    }
+
+    public abstract Double getStandardValue();
+
+    public String getValueString() {
+        return String.format("%.2f", this.value);
+    }
 }

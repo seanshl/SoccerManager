@@ -7,12 +7,10 @@ import com.shiyao.soccermanager.models.misc.Registry;
  * Created by SLiu on 8/25/2017.
  */
 
-public class CentimeterValue implements Length {
-    private Double value;
+public class CentimeterValue extends Length {
 
-    @Override
-    public Double getValue() {
-        return this.value;
+    public CentimeterValue(double value) {
+        this.value = value;
     }
 
     @Override
@@ -26,12 +24,7 @@ public class CentimeterValue implements Length {
     }
 
     @Override
-    public Double convertTo(Length other) {
-        return null;
-    }
-
-    @Override
     public Double getStandardValue() {
-        return new Double(0.01);
+        return 0.01 * this.getValue();
     }
 }

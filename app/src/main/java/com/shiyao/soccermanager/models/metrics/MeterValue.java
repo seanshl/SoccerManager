@@ -9,12 +9,10 @@ import com.shiyao.soccermanager.models.misc.Registry;
  * Created by SLiu on 8/25/2017.
  */
 
-public class MeterValue implements Length {
+public class MeterValue extends Length {
 
-    private Double value;
-    @Override
-    public Double getValue() {
-        return this.value;
+    public MeterValue(double value) {
+        this.value = value;
     }
 
     @Override
@@ -28,12 +26,7 @@ public class MeterValue implements Length {
     }
 
     @Override
-    public Double convertTo(Length other) {
-        return null;
-    }
-
-    @Override
     public Double getStandardValue() {
-        return new Double(1.0);
+        return 1.0 * this.getValue();
     }
 }
