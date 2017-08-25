@@ -6,6 +6,10 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
     <string name="metrics_meter_label">Meter</string>
     <string name="metrics_centimeter_label">Centimeter</string>
+    <string name="metrics_inch_label">Inch</string>
+    <string name="metrics_feet_single_label">Foot</string>
+    <string name="metrics_feet_plural_label">Feet</string>
 </resources>
