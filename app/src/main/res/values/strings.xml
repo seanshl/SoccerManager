@@ -7,4 +7,5 @@
 
     <string name="action_settings">Settings</string>
     <string name="metrics_meter_label">Meter</string>
+    <string name="metrics_centimeter_label">Centimeter</string>
 </resources>

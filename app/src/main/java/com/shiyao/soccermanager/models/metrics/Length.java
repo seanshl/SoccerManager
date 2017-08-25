@@ -9,6 +9,8 @@ public interface Length {
 
     String getLabel();
 
+    String getShortLabel();
+
     Double convertTo(Length other);
 
     Double getStandardValue();

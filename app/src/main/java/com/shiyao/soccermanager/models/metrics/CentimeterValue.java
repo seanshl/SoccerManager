@@ -1,7 +1,5 @@
 package com.shiyao.soccermanager.models.metrics;
 
-import android.content.res.Resources;
-
 import com.shiyao.soccermanager.R;
 import com.shiyao.soccermanager.models.misc.Registry;
 
@@ -9,9 +7,9 @@ import com.shiyao.soccermanager.models.misc.Registry;
  * Created by SLiu on 8/25/2017.
  */
 
-public class MeterValue implements Length {
-
+public class CentimeterValue implements Length {
     private Double value;
+
     @Override
     public Double getValue() {
         return this.value;
@@ -19,12 +17,12 @@ public class MeterValue implements Length {
 
     @Override
     public String getLabel() {
-        return Registry.getContext().getString(R.string.metrics_meter_label);
+        return Registry.getContext().getString(R.string.metrics_centimeter_label);
     }
 
     @Override
     public String getShortLabel() {
-        return "m";
+        return "cm";
     }
 
     @Override
@@ -34,6 +32,6 @@ public class MeterValue implements Length {
 
     @Override
     public Double getStandardValue() {
-        return new Double(1.0);
+        return new Double(0.01);
     }
 }
