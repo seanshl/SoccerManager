@@ -21,4 +21,5 @@ public abstract class Person {
 
     protected ContactsContract.CommonDataKinds.Phone phone;
 
+
 }
