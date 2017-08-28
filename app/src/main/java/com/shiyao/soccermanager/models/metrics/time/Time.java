@@ -6,7 +6,7 @@ import com.shiyao.soccermanager.models.metrics.Unit;
  * Created by SLiu on 8/28/2017.
  */
 
-public class Time extends Unit {
+public abstract class Time extends Unit {
     @Override
     public String getLabel() {
         return null;

@@ -7,18 +7,21 @@ import com.shiyao.soccermanager.models.metrics.Unit;
  */
 
 public abstract class Length extends Unit {
-
-    public Double convertTo(Length other) {
-        if (other == null || other.getValue() == 0.0) {
-            return Double.POSITIVE_INFINITY;
-        } else {
-            return this.getStandardValue() / other.getStandardValue();
-        }
-    }
-
-    public abstract Double getStandardValue();
-
+    @Override
     public String getValueString() {
         return String.format("%.2f", this.value);
+    }
+
+    @Override
+    public double convertTo(Unit that) {
+        if (that instanceof Length) {
+            if (that == null || that.getValue() == 0.0) {
+                return 0.0d;
+            } else {
+                return this.getStandardValue() / that.getStandardValue();
+            }
+        } else {
+            return 0.0d;
+        }
     }
 }
