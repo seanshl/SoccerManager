@@ -1,7 +1,7 @@
-package com.shiyao.soccermanager.models.metrics;
+package com.shiyao.soccermanager.models.metrics.length;
 
 import com.shiyao.soccermanager.R;
-import com.shiyao.soccermanager.models.misc.Registry;
+import com.shiyao.soccermanager.misc.Registry;
 
 /**
  * Created by SLiu on 8/25/2017.

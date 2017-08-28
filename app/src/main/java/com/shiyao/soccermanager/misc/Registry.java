@@ -1,4 +1,4 @@
-package com.shiyao.soccermanager.models.misc;
+package com.shiyao.soccermanager.misc;
 
 import android.app.Application;
 import android.content.Context;

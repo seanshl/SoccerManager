@@ -1,10 +1,12 @@
-package com.shiyao.soccermanager.models.metrics;
+package com.shiyao.soccermanager.models.metrics.length;
+
+import com.shiyao.soccermanager.models.metrics.Unit;
 
 /**
  * Created by SLiu on 8/25/2017.
  */
 
-public abstract class Length extends Unit{
+public abstract class Length extends Unit {
 
     public Double convertTo(Length other) {
         if (other == null || other.getValue() == 0.0) {
