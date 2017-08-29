@@ -7,13 +7,5 @@ import com.shiyao.soccermanager.models.metrics.Unit;
  */
 
 public abstract class Time extends Unit {
-    @Override
-    public String getLabel() {
-        return null;
-    }
 
-    @Override
-    public String getShortLabel() {
-        return null;
-    }
 }
