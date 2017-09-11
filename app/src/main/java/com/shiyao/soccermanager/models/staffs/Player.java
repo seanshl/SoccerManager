@@ -6,7 +6,7 @@ import com.shiyao.soccermanager.models.attributes.Height;
  * Created by SLiu on 8/25/2017.
  */
 
-public class Players extends Person {
+public class Player extends Person {
 
     private Height height;
 
